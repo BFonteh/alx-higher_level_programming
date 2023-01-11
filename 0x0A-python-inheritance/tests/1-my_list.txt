@@ -1,0 +1,47 @@
+====================
+How to 1-my_list.txt
+====================
+
+This is a test for module 1-my_List that inherits and extends the list class.
+
+Usage
+=====
+
+First import the method to test
+	  >>> MyList = __import__('1-my_list').MyList
+
+Test for inheritance by appending
+	  >>> my_list = MyList()
+
+	  >> my_list
+	  []
+
+	  >>> my_list.append(1)
+
+	  >>> my_list.append(4)
+
+	  >>> my_list.append(2)
+
+	  >>> my_list.append(3)
+
+	  >>> my_list.append(5)
+
+	  >>> print(my_list)
+	  [1, 4, 2, 3, 5]
+	  
+SUCCESS CASES:
+		>>> my_list.print_sorted()
+		[1, 2, 3, 4, 5]
+
+		>>> my_list = MyList("python")
+
+		>>> my_list
+		['p', 'y', 't', 'h', 'o', 'n']
+
+		>>> my_list.print_sorted()
+		['h', 'n', 'o', 'p', 't', 'y']
+
+		>>> my_list = MyList()
+
+		>>> my_list.print_sorted()
+		[]
